@@ -1,0 +1,128 @@
+.banner-sub-page{
+  position: relative;
+  .block-banner{
+    img{
+      width: 100%;
+      height: auto;
+    }
+    .icon-original {
+      width: auto;
+      height: auto;
+    }
+  }
+
+  .box-info-slider {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    @include translate(-50%, -50%);
+    .title-slide{
+      color: $color-white;
+      text-align: center;
+      img{
+        margin: auto;
+      }
+      h1{
+        font-size: 40px;
+        padding: 25px 0;
+      }
+      h3{
+        font-size: 24px;
+        padding: 10px 0;
+      }
+      p{
+        font-size: 16px;
+        max-width: 500px;
+      }
+
+    }
+  }
+  #particles-js{
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+}
+.banner-our-services{
+  #particles-js{
+    background-image: url('../images/banner-services.jpg');
+
+  }
+}
+.block-our-services{
+  background: url('../images/bg-software-dev.png') no-repeat left bottom;
+  .block-about-us {
+    .block-better-future {
+      img{
+        position: static;
+      }
+    }
+  }
+
+}
+
+
+
+/*responsive*/
+
+@media screen and (min-width: 1200px){
+
+}
+@media screen and (max-width: 1199px) {
+
+}
+@media screen and (max-width: 991px) {
+
+}
+@media screen and (max-width: 768px) {
+  .banner-our-services {
+    .box-info-slider {
+      .title-slide {
+        h1{
+          padding:0;
+        }
+      }
+    }
+  }
+  .banner-our-services {
+    .box-info-slider{
+      max-width: 700px;
+      min-width: 300px;
+      .title-slide{
+        img{
+          width: 100px;
+        }
+      }
+    }
+  }
+
+}
+@media screen and (max-width: 480px) {
+  .banner-our-services {
+    .box-info-slider {
+      .title-slide {
+        img{
+          width: 50px;
+        }
+        h1{
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .banner-our-services {
+    .box-info-slider {
+      .title-slide {
+        img{
+          width: 30px;
+        }
+      }
+    }
+  }
+}

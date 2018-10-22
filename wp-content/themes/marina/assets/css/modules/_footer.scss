@@ -1,0 +1,122 @@
+#footer {
+  background: $color-black-footer;
+  overflow: hidden;
+  padding: 0 !important;
+  color: $color-white;
+  position: relative;
+  z-index: 1;
+  .title-footer {
+    background: #fff;
+    h2 {
+      color: #505161;
+      font-size: 36px;
+      font-weight: bold;
+      padding: 50px 0;
+    }
+  }
+  .content-footer{
+    padding-bottom: 50px;
+    padding-top: 40px;
+    position: relative;
+    a, p{
+      font-size: 18px;
+      color: #fff;
+    }
+    .footer-image{
+      position: relative;
+    }
+    .img-footer{
+      margin-top: -170px;
+    }
+  }
+  .content-copyright{
+    padding: 30px;
+    background: #fff;
+    color: #505161;
+    .copyright-text{
+      margin-bottom: 0;
+      line-height: 40px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .list-social-footer{
+      .nav-link{
+        padding: 0 1rem;
+        i.fa{
+          font-size: 2.5rem;
+          color: #505161;
+        }
+      }
+    }
+  }
+
+}
+
+
+/*responsive*/
+
+@media screen and (min-width: 1200px){
+
+}
+@media screen and (max-width: 1199px) {
+
+}
+@media screen and (max-width: 991px) {
+
+}
+/*responsive <= 768px*/
+@media screen and (max-width: 768px) {
+  #footer {
+    .box-footer{
+      &:last-child{
+        padding-bottom: 35px;
+      }
+    }
+    .content-footer{
+      padding-bottom: 0;
+    }
+  }
+}
+
+
+/*responsive <= 480px*/
+@media screen and (max-width: 480px) {
+  #footer {
+
+    .content-footer {
+      .footer-office {
+        padding-bottom: 23px;
+      }
+    }
+    .footer-copyright {
+      padding: 10px 0;
+      margin-bottom: 0;
+      padding-right: 59px;
+    }
+
+    .nav-footer {
+      li:first-child{
+        border-left: none;
+      }
+    }
+    .content-copyright {
+      div[class*="col-"]{
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+    .content-footer {
+      div[class*="col-"]{
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      .footer-office{
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+
+}

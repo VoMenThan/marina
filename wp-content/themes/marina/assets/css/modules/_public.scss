@@ -1,0 +1,8 @@
+.custom-row-40{
+  margin-left: -20px;
+  margin-right: -20px;
+  >.col, >[class*=col-]{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

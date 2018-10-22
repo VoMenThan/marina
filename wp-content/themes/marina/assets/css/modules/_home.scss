@@ -1,0 +1,183 @@
+/*modal*/
+#modal-notmiss{
+  .modal-dialog{
+    max-width: 1200px;
+  }
+  button.close{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  }
+}
+/* end modal*/
+
+.home_page{
+  p{
+    color: $color-gray;
+  }
+  .block-about-us{
+    padding: 130px 0;
+    .owl-theme {
+      .owl-dots {
+        position: relative;
+        text-align: right;
+        bottom: 30px;
+        right: 15px;
+      }
+    }
+
+    .box-tip-img{
+      color: $color-gray;
+      font-size: 12px;
+      font-weight: lighter;
+      opacity: .7;
+      &:after{
+        content: '';
+        display: inline-block;
+        width: 50px;
+        border-bottom: 1px solid $color-gray;
+        position: relative;
+        bottom: 5px;
+      }
+      &.rotate-right{
+        position: absolute;
+        right: -70px;
+        bottom: 60px;
+        @include rotate(90deg);
+      }
+      &.rotate-left{
+        position: absolute;
+        left: -70px;
+        bottom: 60px;
+        @include rotate(90deg);
+      }
+      &.tip-bottom{
+        position: absolute;
+        left: -50px;
+        bottom: 5px;
+      }
+
+      &.tip-top{
+        position: absolute;
+        left: -50px;
+        top: -25px;
+      }
+    }
+
+    .box-introduct{
+      padding-bottom: 70px;
+      .color-yellow{
+        color: #C7B466;
+      }
+    }
+
+    .box-introduct-ex{
+      padding-bottom: 110px;
+    }
+
+    .block-content{
+      padding: 60px 80px;
+      .content-hill{
+        padding-left: 30%;
+      }
+      h2{
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: bold;
+        padding-bottom: 20px;
+      }
+      h3{
+        font-size: 24px;
+        line-height: 37px;
+        font-family: $font-chonburi;
+        padding-bottom: 15px;
+      }
+      p{
+        text-align: justify;
+        &.font-buc-thu{
+          font-family: $font-buc-thu;
+          font-size: 24px;
+          line-height: 23px;
+          letter-spacing: 2px;
+          text-align: center;
+        }
+      }
+      p, li{
+        font-size: 14px;
+        line-height: 22px;
+      }
+
+    }
+
+    .box-location{
+      padding-bottom: 140px;
+    }
+    .box-utilities-ex{
+      .box-yellow{
+        font-size: 36px;
+        line-height: 44px;
+        padding: 13px 30px;
+        letter-spacing: 0.02em;
+        color: #C7B466;
+        display: inline-block;
+        border: 2px solid #C7B466;
+        margin-top: 50px;
+      }
+    }
+
+    .box-villas{
+      padding-bottom: 130px;
+    }
+    .pb-100{
+      padding-bottom: 100px;
+    }
+    .pb-50{
+      padding-bottom: 50px;
+    }
+
+
+
+    /*box review building*/
+    .head-review-building{
+      padding-bottom: 30px;
+    }
+    .extend-review-building{
+      padding-bottom: 130px;
+      .box-padding-top{
+        padding-top: 115px;
+      }
+    }
+  }
+
+}
+
+
+/*responsive*/
+
+@media screen and (min-width: 1200px){
+
+}
+@media screen and (max-width: 1199px) {
+
+}
+@media screen and (max-width: 991px) {
+
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 480px) {
+  .home_page {
+    .block-about-us {
+      .block-better-future {
+        img{
+          max-width: 100%;
+          position: static;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+
+}

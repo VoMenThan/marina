@@ -1,0 +1,30 @@
+.show-pc{
+  display: block !important;
+}
+.show-mobile{
+  display: none !important;
+}
+@media screen and (max-width: 768px) {
+  .show-pc{
+    display: none !important;
+  }
+  .show-mobile{
+    display: block !important;
+  }
+
+
+
+
+
+  #footer {
+    h3 {
+      padding-top: 40px;
+    }
+    .content-footer {
+      .footer-office {
+        padding-bottom: 23px;
+      }
+    }
+  }
+
+}

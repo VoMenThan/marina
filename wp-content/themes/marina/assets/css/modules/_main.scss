@@ -1,0 +1,14 @@
+body{
+        font-family: $font-montserrat;
+        color: $color-text;
+}
+@import "header",
+"home",
+"services",
+"case-studies",
+"contact-us",
+"category",
+"detail",
+"footer",
+"public"
+;

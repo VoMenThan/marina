@@ -1,0 +1,37 @@
+@media screen and (max-width: 320px) {
+
+  .block-abouts {
+    .block-business {
+      .media {
+        .media-body {
+          h5{
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .block-about-soft {
+      .item-soft {
+        font-size: 20px;
+        .rounded-circle {
+          line-height: 120px;
+          width: 120px;
+          height: 120px;
+        }
+      }
+    }
+  }
+
+  .box-intro{
+    .p-5{
+      padding: 20px !important;
+
+    }
+  }
+
+
+  .block-services, .block-abouts, .block-contact-us{
+    background: none;
+  }
+
+}

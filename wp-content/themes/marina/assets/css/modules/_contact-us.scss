@@ -1,0 +1,83 @@
+nav{
+  .circle{
+    &:after{
+      content: "";
+      width: 100%;
+      height: 200px;
+      background: url("../images/ellipse-menu.png") no-repeat left bottom;
+      position: absolute;
+      left: -69px;
+      bottom: -23px;
+      z-index: -1;
+    }
+  }
+}
+.banner-contact-us {
+  position: relative;
+  z-index: 1;
+  #particles-js {
+    background-image: url('../images/banner-contact-us.jpg');
+  }
+}
+.block-contact-us{
+  min-height: 700px;
+}
+
+/*responsive*/
+
+@media screen and (min-width: 1200px){
+
+}
+@media screen and (max-width: 1199px) {
+
+}
+@media screen and (max-width: 991px) {
+  nav{
+    .circle{
+      &:after{
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner-contact-us {
+    #particles-js{
+      width: auto;
+      height: 500px;
+    }
+    .box-info-slider {
+      .title-slide {
+        img{
+          width: 130px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .banner-contact-us {
+    .box-info-slider {
+      .title-slide {
+        img{
+          width: 100px;
+        }
+        p{
+          min-width: 400px;
+
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .banner-contact-us {
+    .box-info-slider {
+      .title-slide {
+        p{
+          min-width: 300px;
+        }
+      }
+    }
+  }
+}
