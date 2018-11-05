@@ -75,6 +75,11 @@
                                 </a>
                             </li>
                             <li class="nav-item">
+                                <a href="<?php echo get_home_url();?>/su-kien" class="nav-link waves-effect waves-light">
+                                    SỰ KIỆN
+                                </a>
+                            </li>
+                            <li class="nav-item">
                                 <a href="#lien-he" class="nav-link waves-effect waves-light">
                                     LIÊN HỆ
                                 </a>
@@ -86,3 +91,12 @@
         </div>
     </nav>
 </header>
+
+<a href="tel:0942955399" class="fancybox">
+    <div class="coccoc-alo-phone coccoc-alo-green coccoc-alo-show" id="coccoc-alo-phoneIcon"
+         style="right:0%; top: 50%;">
+        <div class="coccoc-alo-ph-circle"></div>
+        <div class="coccoc-alo-ph-circle-fill"></div>
+        <div class="coccoc-alo-ph-img-circle"></div>
+    </div>
+</a>

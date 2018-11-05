@@ -7,6 +7,10 @@
     position: absolute;
     right: 15px;
     top: 10px;
+    outline: none;
+    span{
+      font-size: 40px;
+    }
   }
 }
 /* end modal*/
@@ -44,23 +48,36 @@
         right: -70px;
         bottom: 60px;
         @include rotate(90deg);
+        width: 140px;
+        text-align: right;
+        white-space: nowrap;
+
       }
       &.rotate-left{
         position: absolute;
         left: -70px;
         bottom: 60px;
         @include rotate(90deg);
+        width: 140px;
+        text-align: right;
+        white-space: nowrap;
       }
       &.tip-bottom{
         position: absolute;
         left: -50px;
         bottom: 5px;
+        width: 140px;
+        text-align: right;
+        white-space: nowrap;
       }
 
       &.tip-top{
         position: absolute;
         left: -50px;
         top: -25px;
+        width: 140px;
+        text-align: right;
+        white-space: nowrap;
       }
     }
 
@@ -164,19 +181,42 @@
 
 }
 @media screen and (max-width: 768px) {
-
-}
-@media screen and (max-width: 480px) {
   .home_page {
     .block-about-us {
-      .block-better-future {
-        img{
-          max-width: 100%;
-          position: static;
+      padding-bottom: 30px;
+      .box-introduct{
+
+      }
+      .block-content{
+        padding: 20px;
+      }
+      .box-introduct-ex{
+        padding-bottom: 30px;
+      }
+      .box-introduct{
+        padding-bottom: 30px;
+      }
+      .box-location{
+        padding-bottom: 40px;
+      }
+      .pb-100{
+        padding-bottom: 30px;
+      }
+      .box-villas{
+        padding-bottom: 30px;
+      }
+      .extend-review-building {
+        padding-bottom: 30px;
+        .box-padding-top{
+          padding-top: 30px;
         }
       }
     }
   }
+
+}
+@media screen and (max-width: 480px) {
+
 }
 @media screen and (max-width: 320px) {
 

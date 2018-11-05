@@ -30,13 +30,40 @@
                 ?>
                 <div class="owl-item">
                     <div class="row">
-                        <div class="col-md-8 offset-md-4">
+                        <div class="col-lg-8 offset-lg-4 col-md-12 offset-md-0">
                             <img src="<?php echo $item['hinh_slide'];?>" alt="">
                         </div>
                     </div>
 
                     <div class="box-info-slider">
-                        <?php echo $item['noi_dung'];?>
+                        <!-- <?php echo $item['noi_dung'];?>-->
+
+                        <div class="title-slide">
+                            <div class="bg-white-transparent">
+                                <span>Nơi hội tụ tinh túy Phương Đông</span>
+                                <span class="last-child"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;với những giá trị vượt Thời Gian</span>
+                                <p>Sở hữu biệt thự đồi nghỉ dưỡng view biển - Đẳng cấp 5 sao duy nhất tại Nha Trang <br>
+                                    Cơ hội đầu tư sinh lợi cao nhất trên thị trường bất động sản hiện nay
+                                </p>
+                            </div>
+
+                            <p class="time">
+                                <b>TP. Hồ Chí Minh</b><br>
+                                <b>Địa điểm</b>: Khách sạn <b>InterContinental Saigon</b> <br>
+                                39 Lê Duẩn, Bến Nghé, Quận 1, TP. HCM <br>
+                                (Góc Lê Duẩn - Hai Bà Trưng, vào cổng Hai Bà Trưng)<br>
+                                <b>Thời gian</b>: 13h30 - 17h30 <br>
+                                Thứ 7, ngày 3 tháng 11 năm 2018 <br><br>
+
+                                <b>Hà Nội</b><br>
+                                <b>Địa điểm</b>: Khách sạn <b>Marriott</b> <br>
+                                8 Đỗ Đức Dục, Mễ Trì, Nam Từ Liêm, Hà Nội<br>
+                                <b>Thời gian</b>: 8h30 - 12h30<br>
+                                Thứ 7, ngày 10 tháng 11 năm 2018 <br>
+
+                            </p>
+                        </div>
+                        <a class="btn-gradient-slide" href="https://docs.google.com/forms/d/e/1FAIpQLScmnUAx9lfoqSwG4P4xD9QrXiI12_PwSASs14gdcETABuHN-w/viewform?c=0&w=1" target="_blank" role="button">ĐĂNG KÍ THAM DỰ</a>
                     </div>
                 </div>
 
@@ -51,10 +78,11 @@
 </section>
 
 <article class="home_page">
+
     <div class="block-about-us">
         <div class="container-fluid">
             <div id="gioi-thieu" class="row box-introduct">
-                <div class="col-lg-7 pl-0">
+                <div class="col-lg-7 col-12 pl-0">
                     <div class="slider-intro owl-carousel owl-theme owl-loaded wow fadeInLeft ">
                         <div class="owl-stage-outer">
                             <div class="owl-stage">
@@ -75,11 +103,11 @@
                     <div class="box-tip-img rotate-right">
                         01 GIỚI THIỆU <span></span>
                     </div>
-                    <a class="color-yellow float-right" href="#">
+                    <a class="color-yellow float-right" target="_blank" href="https://drive.google.com/file/d/1YrOo8cc6qzFSMlSEo14EGYNRmucjZbV3/view">
                         Tải sơ đồ mặt bằng và tiện tích ngoại khu
                     </a>
                 </div>
-                <div class="col-lg-5 col-md-4 mb-4 mb-sm-4 mb-md-0 block-content">
+                <div class="col-lg-5 col-12 mb-4 mb-sm-4 mb-md-0 block-content">
                     <h2>GIỚI THIỆU</h2>
                     <p>
                         Marina Hill là quần thể biệt thự nghỉ dưỡng đồi đẳng cấp quốc tế với tiện ích khép kín 5 sao đầu tiên nằm trong trung tâm thành phố biển Nha Trang. Dự án không những đem đến một phong cách nghỉ dưỡng thượng lưu, một ngôi nhà thứ hai mơ ước xứng tầm đẳng cấp chủ nhân mà còn là cơ hội đầu tư bền vững cho tương lai. Với mật độ xây dựng chỉ 25%, Marina Hill  là Khu Biệt Thự nghỉ dưỡng duy nhất ở Việt Nam hiện nay được xây dựng  theo xu hướng Go Green & Go Organic. Mỗi biệt thự đều có giấy chứng nhận công trình xanh LEED/LOTUS, có giá trị toàn cầu.
@@ -102,7 +130,7 @@
 
             <div class="row box-introduct-ex">
 
-                <div class="col-lg-8 col-md-4 mb-4 mb-sm-4 mb-md-0 block-content">
+                <div class="col-lg-8 col-12 order-lg-0 order-1 mb-4 mb-sm-4 mb-md-0 block-content">
                     <div class="content-hill">
                         <p>
                             BIỆT THỰ ĐỒI ĐẲNG CẤP KHÁC BIỆT <br>
@@ -114,7 +142,7 @@
 
                     <img class="d-block img-fluid w-100" src="<?php echo ASSET_URL?>images/marina/img-hill-gray.png" alt="">
                 </div>
-                <div class="col-lg-4 pl-0">
+                <div class="col-lg-4 col-12 order-lg-1 order-0 pl-0">
                     <div class="slider-intro owl-carousel owl-theme owl-loaded wow fadeInRight" >
                         <div class="owl-stage-outer">
                             <div class="owl-stage">
@@ -140,7 +168,7 @@
             </div>
 
             <div id="vi-tri" class="row box-location">
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-12">
                     <div class="slider-intro owl-carousel owl-theme owl-loaded wow fadeInLeft">
                         <div class="owl-stage-outer">
                             <div class="owl-stage">
@@ -162,7 +190,7 @@
                         02 VỊ TRÍ <span></span>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-4 mb-4 mb-sm-4 mb-md-0 block-content">
+                <div class="col-lg-6 col-12 mb-4 mb-sm-4 mb-md-0 block-content">
                     <h2>VỊ TRÍ</h2>
 
                     <h3> MARINA HILL tọa lạc tại NHA TRANG</h3>
@@ -180,7 +208,7 @@
 
 
             <div class="row box-utilities">
-                <div class="col-lg-6 col-md-4 mb-4 mb-sm-4 mb-md-0 block-content">
+                <div class="col-lg-6 col-12 order-lg-0 order-1 mb-4 mb-sm-4 mb-md-0 block-content">
                     <h2>TIỆN ÍCH</h2>
 
                     <p>
@@ -191,7 +219,7 @@
 
 
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-12 order-lg-1 order-0">
                     <div class="box-tip-img tip-top">
                         03 TIỆN ÍCH <span></span>
                     </div>
@@ -219,7 +247,7 @@
 
             <!-- TIỆN ÍCH NỘI KHU ĐẲNG CẤP-->
             <div id="tien-ich" class="row box-utilities-ex pb-50">
-                <div class="col-lg-6 col-md-4 mb-4 mb-sm-4 mb-md-0 block-content wow fadeInLeft">
+                <div class="col-lg-6 col-12 mb-4 mb-sm-4 mb-md-0 block-content wow fadeInLeft">
                     <img class="img-fluid w-100" src="<?php echo ASSET_URL?>images/marina/muti-utilities.png" alt="">
                 </div>
                 <div class="col-lg-6">
@@ -238,13 +266,13 @@
 
             <div class="row box-utilities pb-100">
 
-                <div class="col-lg-6 text-right">
+                <div class="col-lg-6 col-12 text-right">
                     <img class="img-fluid wow fadeInLeft" src="<?php echo ASSET_URL?>images/marina/robert-power.png" alt="">
                     <div class="box-tip-img rotate-right">
                         03 TIỆN ÍCH <span></span>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-4 mb-4 mb-sm-4 mb-md-0 block-content">
+                <div class="col-lg-6 col-12 mb-4 mb-sm-4 mb-md-0 block-content">
 
                     <p>
                         Ngoài ra đặc biệt tại Marina Hill cư dân được sở hữu một tiện ích vàng cho các thế hệ con cháu kế thừa đó là các khóa học đào tạo về phát triển nhân cách và tài năng cá nhân của hệ thống trường nổi tiếng John Robert Powers (Mỹ - 1923) .
@@ -258,7 +286,7 @@
             </div>
 
             <div class="row box-utilities pb-100">
-                <div class="col-lg-6 col-md-4 mb-4 mb-sm-4 mb-md-0 block-content">
+                <div class="col-lg-6 col-12 order-lg-0 order-1 mb-4 mb-sm-4 mb-md-0 block-content">
 
                     <p>
                         Khu vực tâm linh nằm kế cận Marina Hill với nhiều công trình tâm linh đan xen vào mảng xanh yên tĩnh của núi đồi sẽ là nơi lý tưởng để thực hiện các hoạt động tâm linh, thiền định mỗi ngày, tìm thấy niềm vui an lạc và sự thư thái trong không gian thanh tịnh.
@@ -268,7 +296,7 @@
 
 
                 </div>
-                <div class="col-lg-6 wow fadeInRight">
+                <div class="col-lg-6 col-12 order-lg-1 order-0 wow fadeInRight">
                     <img class="img-fluid " src="<?php echo ASSET_URL?>images/marina/local-hill.png" alt="">
                     <div class="box-tip-img rotate-left">
                         03 TIỆN ÍCH <span></span>
@@ -280,7 +308,7 @@
             <!-- VILLAS-->
             <div id="villas" class="row box-utilities box-villas">
 
-                <div class="col-lg-8 text-right wow fadeInLeft">
+                <div class="col-lg-8 col-12 text-right wow fadeInLeft">
                     <img class="img-fluid" src="<?php echo ASSET_URL?>images/marina/villas.png" alt="">
                     <div class="box-tip-img rotate-right">
                         04 VILLAS <span></span>
@@ -294,7 +322,7 @@
 
             <!-- BIỆT THỰ SONG LẬP MAIA VILLA-->
             <div class="row head-review-building">
-                <div class="col-lg-6 col-md-4 mb-4 mb-sm-4 mb-md-0 block-content">
+                <div class="col-lg-6 col-12 order-lg-0 order-1 mb-4 mb-sm-4 mb-md-0 block-content">
                     <h3>BIỆT THỰ SONG LẬP MAIA VILLA</h3>
 
                     <p class="font-buc-thu">
@@ -309,7 +337,7 @@
 
 
                 </div>
-                <div class="col-lg-6 wow fadeInRight">
+                <div class="col-lg-6 order-lg-1 order-0 wow fadeInRight">
                     <img class="img-fluid" src="<?php echo ASSET_URL?>images/marina/maia-villa.png" alt="">
                     <div class="box-tip-img rotate-left">
                         04 VILLAS <span></span>
@@ -347,14 +375,14 @@
             <!-- BIỆT THỰ ĐƠN LẬP MELIA VILLA-->
             <div class="row head-review-building">
 
-                <div class="col-lg-6 text-right wow fadeInLeft">
+                <div class="col-lg-6 col-12 text-right wow fadeInLeft">
                     <img class="img-fluid" src="<?php echo ASSET_URL?>images/marina/melia-villa.png" alt="">
                     <div class="box-tip-img rotate-right">
                         04 VILLAS <span></span>
                     </div>
                 </div>
 
-                <div class="col-lg-6 col-md-4 mb-4 mb-sm-4 mb-md-0 block-content">
+                <div class="col-lg-6 col-12 mb-4 mb-sm-4 mb-md-0 block-content">
                     <h3>BIỆT THỰ ĐƠN LẬP MELIA VILLA</h3>
 
                     <p class="font-buc-thu">
@@ -396,7 +424,7 @@
 
             <!-- BIỆT THỰ VIP MERRIL VILLA-->
             <div class="row head-review-building">
-                <div class="col-lg-6 col-md-4 mb-4 mb-sm-4 mb-md-0 block-content">
+                <div class="col-lg-6 col-12 order-lg-0 order-1 mb-4 mb-sm-4 mb-md-0 block-content">
                     <h3>BIỆT THỰ VIP MERRIL VILLA</h3>
 
                     <p class="font-buc-thu">
@@ -411,7 +439,7 @@
 
 
                 </div>
-                <div class="col-lg-6 wow fadeInRight">
+                <div class="col-lg-6 order-lg-1 order-0 wow fadeInRight">
                     <img src="<?php echo ASSET_URL?>images/marina/merril-villa.png" alt="">
                     <div class="box-tip-img rotate-left">
                         04 VILLAS <span></span>

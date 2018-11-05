@@ -2,13 +2,13 @@
 <footer id="footer">
 
     <div id="lien-he" class="row title-footer">
-        <h2 class="col-8 offset-4">LIÊN HỆ</h2>
+        <h2 class="col-4 offset-lg-4 offset-6">LIÊN HỆ</h2>
     </div>
     <div class="row content-footer">
         <div class="footer-image col-lg-4 col-md-6 color-sm-12">
             <img class="img-fluid img-footer" src="<?php echo ASSET_URL?>images/marina/img-footer.jpg" alt="">
         </div>
-        <div class="col-lg-8">
+        <div class="col-lg-8 p-lg-0 p-5">
             <p>
                 CHỦ ĐẦU TƯ NHA TRANG GREEN HILL CO., LTD <br>
                 VP Nha Trang: 117 Nguyễn Xiển, Xã Vĩnh Ngọc, Thành phố Nha Trang. <br>
@@ -24,21 +24,21 @@
     </div>
 
     <div class="row content-copyright">
-        <div class="col-3">
+        <div class="col-lg-4 order-lg-0 order-1">
             <p class="copyright-text">
                 © Green Hill 2018. All rights reserved.
             </p>
         </div>
-        <div class="col-9">
+        <div class="col-lg-8 order-lg-1 order-0">
             <ul class="nav list-social-footer">
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a class="nav-link" target="_blank" href="https://www.instagram.com/media.marinahill/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    <a class="nav-link" target="_blank" href="https://www.facebook.com/bietthunghiduongtrendoinhatrang/?_rdc=1&_rdr"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    <a class="nav-link" target="_blank" href="https://www.youtube.com/channel/UCp5lFfV6-9p9dvYjb4Rmnkw/featured"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
                 </li>
             </ul>
         </div>
