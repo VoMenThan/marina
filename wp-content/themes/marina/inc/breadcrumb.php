@@ -9,8 +9,8 @@
         <li class="breadcrumb-item <?php if(uri_segment(0)== 'bao-chi') echo 'active';?>" >
             <a href="<?php echo get_home_url();?>/bao-chi">Báo Chí</a>
         </li>
-        <li class="breadcrumb-item <?php if(uri_segment(0)== 'su-kien') echo 'active';?>" >
-            <a href="<?php echo get_home_url();?>/su-kien">Sự Kiện</a>
+        <li class="breadcrumb-item <?php if(uri_segment(0)== 'tin-tuc-bat-dong-san') echo 'active';?>" >
+            <a href="<?php echo get_home_url();?>/tin-tuc-bat-dong-san">Tin tức bất động sản</a>
         </li>
     </ol>
 </nav>

@@ -1,10 +1,10 @@
 
 <footer id="footer">
 
-    <div id="lien-he" class="row title-footer">
-        <h2 class="col-4 offset-lg-4 offset-6">LIÊN HỆ</h2>
+    <div id="lien-he" class="row title-footer" style="margin: auto 0;">
+        <h2 class="col-12 offset-lg-4 offset-6">LIÊN HỆ</h2>
     </div>
-    <div class="row content-footer">
+    <div class="row content-footer" style="margin: auto 0;">
         <div class="footer-image col-lg-4 col-md-6 color-sm-12">
             <img class="img-fluid img-footer" src="<?php echo ASSET_URL?>images/marina/img-footer.jpg" alt="">
         </div>
@@ -23,7 +23,7 @@
         </div>
     </div>
 
-    <div class="row content-copyright">
+    <div class="row content-copyright" style="margin: auto 0;">
         <div class="col-lg-4 order-lg-0 order-1">
             <p class="copyright-text">
                 © Green Hill 2018. All rights reserved.
@@ -135,16 +135,53 @@
     $(".main-menu .nav-item a[href^='#']").on('click', function(e) {
         // prevent default anchor click behavior
         e.preventDefault();
+
         // store hash
         var hash = this.hash;
         if($(hash).length <= 0) window.location.href = "<?php echo get_home_url();?>"+hash;
         $("html, body").animate({ scrollTop: $(e.target.hash).offset().top - 40 }, 'slow');
+        $(".main-menu .nav-item a[href^='#']").removeClass("active");
+        $(this).addClass('active');
+
 
     });
 
 
 
 
+</script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128085058-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-128085058-1');
+</script>
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Ads: 792765895 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-792765895"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-792765895');
+</script>
+
+
+<script>
+    window.addEventListener('load', function() {
+        jQuery('[href^="tel:"]').click(function(){
+            gtag('event', 'conversion', {'send_to': 'AW-792765895/k5PlCMv0mYwBEMfLgvoC'});
+        })
+    });
 </script>
 </body>
 </html>

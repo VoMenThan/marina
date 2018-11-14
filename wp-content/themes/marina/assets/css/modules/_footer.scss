@@ -62,7 +62,11 @@
 
 }
 @media screen and (max-width: 991px) {
-
+  #footer {
+    .row{
+      margin: auto 0;
+    }
+  }
 }
 /*responsive <= 768px*/
 @media screen and (max-width: 768px) {

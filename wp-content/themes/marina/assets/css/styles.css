@@ -78,6 +78,10 @@ nav .navbar-expand-lg {
   padding: 5px 0; }
   nav .navbar-expand-lg .navbar-nav .nav-link {
     padding: 0 1.5rem; }
+    nav .navbar-expand-lg .navbar-nav .nav-link:hover {
+      font-weight: bold; }
+    nav .navbar-expand-lg .navbar-nav .nav-link.active {
+      font-weight: bold; }
 nav .navbar-brand {
   padding-left: 20px; }
 nav .navbar-toggler {
@@ -355,7 +359,10 @@ a[class*="btn-gradient"] {
     .home_page .block-about-us .box-tip-img.tip-top {
       position: absolute;
       left: -50px;
-      top: -25px; }
+      top: -25px;
+      width: 140px;
+      text-align: right;
+      white-space: nowrap; }
   .home_page .block-about-us .box-introduct {
     padding-bottom: 70px; }
     .home_page .block-about-us .box-introduct .color-yellow {
@@ -412,6 +419,9 @@ a[class*="btn-gradient"] {
       padding-top: 115px; }
 
 /*responsive*/
+@media screen and (max-width: 991px) {
+  .home_page .block-about-us .box-tip-img.rotate-right {
+    display: none; } }
 @media screen and (max-width: 768px) {
   .home_page .block-about-us {
     padding-bottom: 30px; }
@@ -595,6 +605,8 @@ nav .circle:after {
     font-size: 24px;
     line-height: 29px;
     display: inline-block; }
+    .category_page .breadcrumb .breadcrumb-item a:hover {
+      color: #000; }
   .category_page .breadcrumb .breadcrumb-item.active a {
     color: #000; }
 .category_page .list-news {
@@ -602,7 +614,10 @@ nav .circle:after {
   .category_page .list-news .col-lg-4 {
     padding: 0; }
   .category_page .list-news .card {
-    border: none; }
+    border: none;
+    border-left: 1px solid #DFE7F0; }
+    .category_page .list-news .card:hover .box-hover {
+      display: block; }
   .category_page .list-news .card-img-top {
     border-radius: 0; }
   .category_page .list-news .col-lg-4:nth-child(3n+3) .card-body {
@@ -610,13 +625,12 @@ nav .circle:after {
   .category_page .list-news .card-body {
     position: relative;
     padding-left: 30px;
-    border-left: 1px solid #DFE7F0;
     border-bottom: 1px solid #DFE7F0; }
     .category_page .list-news .card-body .date {
       font-size: 11px;
       line-height: 13px; }
     .category_page .list-news .card-body .card-title {
-      font-size: 18px;
+      font-size: 16px;
       line-height: 29px;
       text-transform: uppercase;
       color: #000; }
@@ -634,6 +648,52 @@ nav .circle:after {
       transform: rotate(-90deg);
       width: 60px;
       white-space: nowrap; }
+  .category_page .list-news .box-hover {
+    display: none;
+    position: absolute;
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 20px; }
+    .category_page .list-news .box-hover .icon-document {
+      width: 24px;
+      height: 24px;
+      background: url(../images/marina/icon-document.png) no-repeat center;
+      display: inline-block;
+      background-size: 100%;
+      margin-right: 10px;
+      vertical-align: bottom; }
+    .category_page .list-news .box-hover .date {
+      font-size: 11px;
+      padding-bottom: 20px;
+      line-height: 30px; }
+    .category_page .list-news .box-hover h5 {
+      font-size: 18px;
+      text-transform: uppercase;
+      padding-bottom: 15px; }
+    .category_page .list-news .box-hover p {
+      font-size: 12px;
+      font-family: "Montserrat", sans-serif;
+      padding-bottom: 30px; }
+    .category_page .list-news .box-hover .category-name {
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase;
+      position: absolute;
+      top: 130px;
+      left: -5px;
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+      width: 60px;
+      white-space: nowrap; }
+    .category_page .list-news .box-hover .btn-view-more {
+      position: absolute;
+      bottom: 30px; }
   .category_page .list-news .load-more {
     border: 1px solid #B3BAC2;
     color: #B3BAC2; }
@@ -1484,6 +1544,17 @@ coccoc-alo-number::-ms-clear {
 .valid-invalid-message:before {
   content: "* "; }
 
+.register-page .label-content {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: bold;
+  padding-bottom: 30px; }
+.register-page .form-group > label {
+  font-weight: bold;
+  padding-bottom: 10px; }
+  .register-page .form-group > label span {
+    color: red; }
+
 #footer {
   background: #393A47;
   overflow: hidden;
@@ -1525,6 +1596,9 @@ coccoc-alo-number::-ms-clear {
         color: #505161; }
 
 /*responsive*/
+@media screen and (max-width: 991px) {
+  #footer .row {
+    margin: auto 0; } }
 /*responsive <= 768px*/
 @media screen and (max-width: 768px) {
   #footer .box-footer:last-child {

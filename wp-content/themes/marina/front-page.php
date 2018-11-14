@@ -1,77 +1,80 @@
 <?php get_header();?>
 
-<!-- Modal -->
-<div class="modal fade" id="modal-notmiss" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-
-
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <a class="d-block" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScmnUAx9lfoqSwG4P4xD9QrXiI12_PwSASs14gdcETABuHN-w/viewform?c=0&w=1">
-                    <img class="img-fluid" src="<?php echo ASSET_URL?>images/marina/popup.png" alt="">
-                </a>
-
-
-        </div>
-    </div>
-</div>
-
 
 <section class="slider-homepage">
     <div class="carousel-main owl-carousel owl-theme owl-loaded">
+
         <div class="owl-stage-outer">
+
             <div class="owl-stage">
+
                 <?php
+
                 $banner_slider = get_field("list-slide", $post->ID);
+
                 foreach ($banner_slider as $item):
 
-                ?>
-                <div class="owl-item">
-                    <div class="row">
-                        <div class="col-lg-8 offset-lg-4 col-md-12 offset-md-0">
-                            <img src="<?php echo $item['hinh_slide'];?>" alt="">
-                        </div>
-                    </div>
 
-                    <div class="box-info-slider">
-                        <!-- <?php echo $item['noi_dung'];?>-->
 
-                        <div class="title-slide">
-                            <div class="bg-white-transparent">
-                                <span>Nơi hội tụ tinh túy Phương Đông</span>
-                                <span class="last-child"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;với những giá trị vượt Thời Gian</span>
-                                <p>Sở hữu biệt thự đồi nghỉ dưỡng view biển - Đẳng cấp 5 sao duy nhất tại Nha Trang <br>
-                                    Cơ hội đầu tư sinh lợi cao nhất trên thị trường bất động sản hiện nay
-                                </p>
+                    ?>
+
+                    <div class="owl-item">
+
+                        <div class="row">
+
+                            <div class="col-lg-8 offset-lg-4 col-md-12 offset-md-0">
+
+                                <img src="<?php echo $item['hinh_slide'];?>" alt="">
+
                             </div>
 
-                            <p class="time">
-                                <b>TP. Hồ Chí Minh</b><br>
-                                <b>Địa điểm</b>: Khách sạn <b>InterContinental Saigon</b> <br>
-                                39 Lê Duẩn, Bến Nghé, Quận 1, TP. HCM <br>
-                                (Góc Lê Duẩn - Hai Bà Trưng, vào cổng Hai Bà Trưng)<br>
-                                <b>Thời gian</b>: 13h30 - 17h30 <br>
-                                Thứ 7, ngày 3 tháng 11 năm 2018 <br><br>
-
-                                <b>Hà Nội</b><br>
-                                <b>Địa điểm</b>: Khách sạn <b>Marriott</b> <br>
-                                8 Đỗ Đức Dục, Mễ Trì, Nam Từ Liêm, Hà Nội<br>
-                                <b>Thời gian</b>: 8h30 - 12h30<br>
-                                Thứ 7, ngày 10 tháng 11 năm 2018 <br>
-
-                            </p>
                         </div>
-                        <a class="btn-gradient-slide" href="https://docs.google.com/forms/d/e/1FAIpQLScmnUAx9lfoqSwG4P4xD9QrXiI12_PwSASs14gdcETABuHN-w/viewform?c=0&w=1" target="_blank" role="button">ĐĂNG KÍ THAM DỰ</a>
+
+
+
+                        <div class="box-info-slider">
+
+                            <!-- <?php echo $item['noi_dung'];?>-->
+
+
+
+                            <div class="title-slide">
+
+                                <div class="bg-white-transparent">
+
+
+
+                                    <p><a href="http://marinahill.vn/truyen-thong/chon-dat-phong-thuy-de-duoc-dai-phu-quy-doi-doi"></a>CHỌN ĐẤT PHONG THỦY ĐỂ ĐƯỢC ĐẠI PHÚ QUÝ ĐỜI ĐỜI<br>
+
+                                    <p class="time" >      Đất làm nhà phải là nơi tụ khí: Người xưa quan niệm vùng đất tụ khí thì phúc mới dày. Đó là vùng đất trước thấp sau cao, không gian phía trước rộng để câu khí vào. Sau khi ở, gia chủ ngày một thăng tiến và có hậu....
+
+                                    </p>
+
+                                </div>
+
+
+
+
+                            </div>
+
+                            <a class="btn-gradient-slide" href="http://marinahill.vn/truyen-thong/chon-dat-phong-thuy-de-duoc-dai-phu-quy-doi-doi" target="_blank" role="button">CHI TIẾT</a>
+
+                        </div>
+
                     </div>
-                </div>
+
+
 
                 <?php endforeach;?>
 
+
+
             </div>
+
         </div>
+
     </div>
+
     <a href="#" class="arrow-bottom animated fadeInDown">
         <span class="text-rotate">Kéo xuống để xem tiếp</span>
     </a>
@@ -440,7 +443,7 @@
 
                 </div>
                 <div class="col-lg-6 order-lg-1 order-0 wow fadeInRight">
-                    <img src="<?php echo ASSET_URL?>images/marina/merril-villa.png" alt="">
+                    <img class="img-fluid" src="<?php echo ASSET_URL?>images/marina/merril-villa.png" alt="">
                     <div class="box-tip-img rotate-left">
                         04 VILLAS <span></span>
                     </div>

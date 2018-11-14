@@ -52,9 +52,20 @@ $news_all = get_posts( $args );
                                 <div class="card">
                                     <img class="card-img-top" src="<?php echo $image_featured?>" alt="Card image cap">
                                     <div class="card-body">
-                                        <div class="date"><?php echo get_the_date();?></div>
+                                        <div class="date"><?php echo get_the_date( 'd-m-Y', $item->ID );?></div>
                                         <a href="<?php echo get_home_url()."/truyen-thong/". $item->post_name; ?>"><h5 class="card-title"><?php echo $item->post_title;?></h5></a>
                                         <span class="category-name"><?php echo $terms[0]->name;?></span>
+                                    </div>
+
+                                    <div class="box-hover">
+                                        <div class="date"><i class="icon-document"></i> <?php echo get_the_date( 'd-m-Y', $item->ID );;?></div>
+                                        <h5 class="card-title"><?php echo $item->post_title;?></h5>
+                                        <p>
+                                            <?php echo $item->post_excerpt;?>
+                                        </p>
+                                        <span class="category-name"><?php echo $terms[0]->name;?></span>
+
+                                        <a class="btn-gradient-slide btn-view-more" href="<?php echo get_home_url()."/truyen-thong/". $item->post_name; ?>">Chi Tiết</a>
                                     </div>
                                 </div>
                             </div>

@@ -8,6 +8,9 @@
         font-size: 24px;
         line-height: 29px;
         display: inline-block;
+        &:hover{
+          color: #000;
+        }
       }
       &.active{
         a{
@@ -25,6 +28,12 @@
     }
     .card{
       border: none;
+      border-left: 1px solid #DFE7F0;
+      &:hover{
+        .box-hover{
+          display: block;
+        }
+      }
     }
     .card-img-top{
       border-radius: 0;
@@ -37,7 +46,6 @@
     .card-body{
       position: relative;
       padding-left: 30px;
-      border-left: 1px solid #DFE7F0;
       border-bottom: 1px solid #DFE7F0;
 
       .date{
@@ -45,7 +53,7 @@
         line-height: 13px;
       }
       .card-title{
-        font-size: 18px;
+        font-size: 16px;
         line-height: 29px;
         text-transform: uppercase;
         color: $color-black;
@@ -62,7 +70,55 @@
         white-space: nowrap;
       }
     }
-
+    .box-hover{
+      display: none;
+      position: absolute;
+      background: #fff;
+      height: 100%;
+      width: 100%;
+      padding-top: 100px;
+      padding-left: 50px;
+      padding-right: 20px;
+      .icon-document{
+        width: 24px;
+        height: 24px;
+        background: url(../images/marina/icon-document.png) no-repeat center;
+        display: inline-block;
+        background-size: 100%;
+        margin-right: 10px;
+        vertical-align: bottom;
+      }
+      .date{
+        font-size: 11px;
+        padding-bottom: 20px;
+        line-height: 30px;
+      }
+      h5{
+        font-size: 18px;
+        text-transform: uppercase;
+        padding-bottom: 15px;
+      }
+      p{
+        font-size: 12px;
+        font-family: $font-montserrat;
+        padding-bottom: 30px;
+      }
+      .category-name{
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        position: absolute;
+        top: 130px;
+        left: -5px;
+        @include rotate(-90deg);
+        width: 60px;
+        white-space: nowrap;
+      }
+      .btn-view-more{
+        position: absolute;
+        bottom: 30px;
+      }
+    }
     .load-more{
       border: 1px solid #B3BAC2;
       color: #B3BAC2;

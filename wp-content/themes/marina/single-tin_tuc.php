@@ -31,7 +31,7 @@ get_header();
             <div class="container">
                 <div class="row">
                     <div class="col-lg-2">
-                        <ul class="nav flex-column text-center list-share-social">
+                        <ul class="nav flex-lg-column text-center list-share-social">
                             <li class="nav-item">
                                 <a class="nav-link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                             </li>
@@ -45,7 +45,7 @@ get_header();
                     </div>
                     <div class="col-lg-10">
                         <div class="content-page">
-                            <div class="date-time"><?php echo get_the_date();?></div>
+                            <div class="date-time"><?php echo get_the_date( 'd-m-Y', $item->ID );?></div>
                             <h1><?php echo $post->post_title;?></h1>
                             <h3 class="category"><?php echo $terms_post[0]->name;?></h3>
 
@@ -71,7 +71,7 @@ get_header();
                         <div class="card">
                             <img class="card-img-top" src="<?php echo $image_featured?>" alt="Card image cap">
                             <div class="card-body">
-                                <div class="date"><?php echo get_the_date();?></div>
+                                <div class="date"><?php echo get_the_date( 'd-m-Y', $item->ID );?></div>
                                 <a href="<?php echo get_home_url()."/truyen-thong/". $item->post_name; ?>"><h5 class="card-title"><?php echo $item->post_title;?></h5></a>
                                 <span class="category-name"><?php echo $terms_post[0]->name;?></span>
                             </div>

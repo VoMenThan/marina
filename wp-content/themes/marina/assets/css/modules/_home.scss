@@ -178,9 +178,16 @@
 
 }
 @media screen and (max-width: 991px) {
-
+  .home_page {
+    .block-about-us {
+      .box-tip-img.rotate-right{
+        display: none;
+      }
+    }
+  }
 }
 @media screen and (max-width: 768px) {
+
   .home_page {
     .block-about-us {
       padding-bottom: 30px;

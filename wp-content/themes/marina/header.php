@@ -1,3 +1,4 @@
+<?php ob_start();?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -69,14 +70,14 @@
                                     TIẾN ĐỘ
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a href="<?php echo get_home_url();?>/truyen-thong" class="nav-link waves-effect waves-light">
+                            <li class="nav-item active">
+                                <a href="<?php echo get_home_url();?>/truyen-thong" class="nav-link waves-effect waves-light <?php echo (uri_segment(0)== 'truyen-thong'? 'active': '');?>">
                                     TRUYỀN THÔNG
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="<?php echo get_home_url();?>/su-kien" class="nav-link waves-effect waves-light">
-                                    SỰ KIỆN
+                                <a href="<?php echo get_home_url();?>/tin-tuc-bat-dong-san" class="nav-link waves-effect waves-light <?php echo (uri_segment(0)== 'tin-tuc-bat-dong-san'? 'active': '');?>">
+                                    TIN TỨC BẤT ĐỘNG SẢN
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -94,7 +95,7 @@
 
 <a href="tel:0942955399" class="fancybox">
     <div class="coccoc-alo-phone coccoc-alo-green coccoc-alo-show" id="coccoc-alo-phoneIcon"
-         style="right:0%; top: 50%;">
+         style="right:-50px; top: calc(100% - 150px);">
         <div class="coccoc-alo-ph-circle"></div>
         <div class="coccoc-alo-ph-circle-fill"></div>
         <div class="coccoc-alo-ph-img-circle"></div>

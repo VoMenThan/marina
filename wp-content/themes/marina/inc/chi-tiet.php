@@ -14,7 +14,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-2">
-                        <ul class="nav flex-column text-center list-share-social">
+                        <ul class="nav flex-lg-column text-center list-share-social">
                             <li class="nav-item">
                                 <a class="nav-link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                             </li>
