@@ -12,21 +12,17 @@
 $args = array(
         'posts_per_page' => 3,
         'offset'=> 0,
-        'post_type' => 'tin_tuc',
-        'orderby' => 'menu_order',
-        'order' =>'asc'
+        'post_type' => 'su_kien',
+        'orderby' => 'id',
+        'order' =>'desc'
         );
 $news_related = get_posts( $args );
-$terms_post = get_the_terms( $post->ID, 'danh_muc_tin_tuc' );
 
 get_header();
 ?>
 
 <section class="category_page">
     <div class="container">
-         <?php include(INC."breadcrumb.php");?>
-
-
         <article class="content-detail">
             <div class="container">
                 <div class="row">
@@ -47,7 +43,6 @@ get_header();
                         <div class="content-page">
                             <div class="date-time"><?php echo get_the_date( 'd-m-Y', $item->ID );?></div>
                             <h1><?php echo $post->post_title;?></h1>
-                            <h3 class="category"><?php echo $terms_post[0]->name;?></h3>
 
                             <div class="content-news">
                                 <?php echo $post->post_content;?>
@@ -61,19 +56,18 @@ get_header();
 
 
         <article class="list-news">
-            <div class="title-news-related">TIN KHÁC</div>
+            <div class="title-news-related">SỰ KIỆN KHÁC</div>
             <div class="row">
                 <?php foreach ($news_related as $item):
                         $image_featured = get_the_post_thumbnail_url($item->ID);
-                        $terms_post = get_the_terms( $item->ID, 'danh_muc_tin_tuc' );
+
                     ?>
                     <div class="col-lg-4">
                         <div class="card">
                             <img class="card-img-top" src="<?php echo $image_featured?>" alt="Card image cap">
                             <div class="card-body">
                                 <div class="date"><?php echo get_the_date( 'd-m-Y', $item->ID );?></div>
-                                <a href="<?php echo get_home_url()."/truyen-thong/". $item->post_name; ?>"><h5 class="card-title"><?php echo $item->post_title;?></h5></a>
-                                <span class="category-name"><?php echo $terms_post[0]->name;?></span>
+                                <a href="<?php echo get_home_url()."/su-kien/". $item->post_name; ?>"><h5 class="card-title"><?php echo $item->post_title;?></h5></a>
                             </div>
                         </div>
                     </div>

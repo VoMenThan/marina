@@ -617,7 +617,7 @@ nav .circle:after {
     border: none;
     border-left: 1px solid #DFE7F0; }
     .category_page .list-news .card:hover .box-hover {
-      display: block; }
+      transform: scale(1); }
   .category_page .list-news .card-img-top {
     border-radius: 0; }
   .category_page .list-news .col-lg-4:nth-child(3n+3) .card-body {
@@ -649,14 +649,18 @@ nav .circle:after {
       width: 60px;
       white-space: nowrap; }
   .category_page .list-news .box-hover {
-    display: none;
     position: absolute;
     background: #fff;
     height: 100%;
     width: 100%;
     padding-top: 100px;
     padding-left: 50px;
-    padding-right: 20px; }
+    padding-right: 20px;
+    transform: scale(0);
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out; }
     .category_page .list-news .box-hover .icon-document {
       width: 24px;
       height: 24px;

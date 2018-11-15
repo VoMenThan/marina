@@ -76,8 +76,8 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="<?php echo get_home_url();?>/tin-tuc-bat-dong-san" class="nav-link waves-effect waves-light <?php echo (uri_segment(0)== 'tin-tuc-bat-dong-san'? 'active': '');?>">
-                                    TIN TỨC BẤT ĐỘNG SẢN
+                                <a href="<?php echo get_home_url();?>/su-kien" class="nav-link waves-effect waves-light <?php echo (uri_segment(0)== 'su-kien'? 'active': '');?>">
+                                    SỰ KIỆN
                                 </a>
                             </li>
                             <li class="nav-item">

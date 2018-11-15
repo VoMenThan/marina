@@ -13,7 +13,7 @@ foreach ( $terms as $k => $v) {
     $args = array(
         'posts_per_page' => -1,
         'post_type' => 'tin_tuc',
-        'order' => 'asc',
+        'order' => 'desc',
         'tax_query' => array(
             array(
                 'taxonomy' => 'danh_muc_tin_tuc',
@@ -32,8 +32,8 @@ $args = array(
     'posts_per_page' => -1,
     'offset'=> 0,
     'post_type' => 'tin_tuc',
-    'orderby' => 'menu_order',
-    'order' =>'asc'
+    'orderby' => 'id',
+    'order' =>'desc'
 );
 $news_all = get_posts( $args );
 ?>

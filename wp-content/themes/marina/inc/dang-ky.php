@@ -45,8 +45,9 @@ else{
     <div class="container">
 
         <?php
+        $home_url = get_home_url();
         if ($result->st == 1):
-            header("Location: http://localhost/marina/thanh-cong/");
+            header("Location: ".$home_url."/thanh-cong/");
         else:?>
         <div class="row">
             <div class="col-lg-6 offset-lg-3">
